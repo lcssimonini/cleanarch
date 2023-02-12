@@ -1,0 +1,15 @@
+
+spring:
+  datasource:
+    password: postgres
+    url: jdbc:postgresql://localhost:5432/cep-data
+    username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+postal-code-service:
+  url: https://viacep.com.br/ws/
